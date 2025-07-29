@@ -1,4 +1,5 @@
 export type TSentimentScore = -1 | 0 | 1
+export type TAssetType = 'stock' | 'commodity' | 'crypto' | 'fund'
 
 export interface AssetInsight {
   id: string
@@ -27,7 +28,7 @@ export interface IAsset {
   id: string
   symbol: string
   name: string
-  asset_type: string // e.g., 'stock', 'crypto', etc.
+  asset_type: TAssetType
   exchange: string | null
   is_shariah_compliant: boolean
   zoya_compliance_data: ZoyaComplianceData

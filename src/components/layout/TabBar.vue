@@ -1,4 +1,3 @@
-```vue
 <script lang="ts" setup>
 import { computed } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
@@ -37,4 +36,3 @@ const active = computed({
     </van-tabbar-item>
   </van-tabbar>
 </template>
-```

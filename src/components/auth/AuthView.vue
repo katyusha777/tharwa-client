@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AuthAdapter from '@adapters/AuthAdapter'
 import Button from 'primevue/button'
 import FileUpload from 'primevue/fileupload'
 import IconField from 'primevue/iconfield'
@@ -35,6 +36,10 @@ function onAvatarSelect(event: any) {
 function handleSubmit() {
   if (isLogin.value) {
     console.log('Login data:', {
+      email: email.value,
+      password: password.value,
+    })
+    AuthAdapter.login({
       email: email.value,
       password: password.value,
     })

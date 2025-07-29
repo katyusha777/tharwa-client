@@ -89,7 +89,6 @@ function navigateToAI() {
 }
 
 onMounted(() => {
-  portfolioStore.loadDefault()
 })
 </script>
 
@@ -266,68 +265,7 @@ onMounted(() => {
       <h3 class="text-lg font-semibold text-white mb-4">
         Portfolio Holdings
       </h3>
-
-      <div class="space-y-3">
-        <div
-          v-for="asset in activePortfolio.assets"
-          :key="asset.id"
-          class="bg-gray-900 rounded-xl p-4"
-        >
-          <div class="flex items-center justify-between mb-3">
-            <div class="flex items-center gap-3">
-              <div class="flex-1">
-                <div class="flex items-center gap-2">
-                  <p class="font-semibold text-white">
-                    {{ asset.asset.symbol }}
-                  </p>
-                  <span class="text-xs text-gray-500">{{ asset.asset.name }}</span>
-                </div>
-                <p class="text-xs text-gray-500 mt-1">
-                  {{ asset.units }} units
-                </p>
-              </div>
-            </div>
-
-            <div class="text-right">
-              <p class="font-semibold text-white">
-                {{ formatCurrency(calculateAssetValue(asset), asset.asset.currency) }}
-              </p>
-              <p class="text-xs text-gray-500">
-                @ {{ formatCurrency(asset.asset.latest_value, asset.asset.currency) }}
-              </p>
-            </div>
-          </div>
-
-          <div class="flex items-center justify-between pt-3 border-t border-gray-800">
-            <div class="flex items-center gap-2">
-              <span class="text-xs text-gray-500">Sentiment</span>
-              <div
-                class="inline-flex items-center gap-1 px-2 py-1 rounded-full text-xs" :class="[
-                  asset.asset.sentiment_score === 1 ? 'bg-emerald-500/20 text-emerald-400'
-                  : asset.asset.sentiment_score === -1 ? 'bg-red-500/20 text-red-400'
-                    : 'bg-gray-700 text-gray-400',
-                ]"
-              >
-                <Icon
-                  :icon="getSentimentIcon(asset.asset.sentiment_score)"
-                  class="text-sm"
-                />
-                <span>{{ getSentimentLabel(asset.asset.sentiment_score) }}</span>
-              </div>
-            </div>
-
-            <div
-              class="px-3 py-1 rounded-full text-xs font-medium" :class="[
-                asset.asset.is_shariah_compliant
-                  ? 'bg-emerald-500/20 text-emerald-400'
-                  : 'bg-red-500/20 text-red-400',
-              ]"
-            >
-              {{ asset.asset.is_shariah_compliant ? '✓ Shariah' : '✗ Non-Shariah' }}
-            </div>
-          </div>
-        </div>
-      </div>
+      <AssetsList :assets="activePortfolio.assets" />
     </div>
   </section>
 
