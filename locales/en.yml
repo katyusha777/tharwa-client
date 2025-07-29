@@ -1,0 +1,134 @@
+branding:
+  name: Arasaka
+  url: https://arasaka.no
+
+button:
+  view_category: View Category
+  set_address: Set Address
+  continue: Continue
+  proceed_to_payment: Proceed To Payment
+  update: Update
+  logout: Logout
+  add_to_cart: Add To Cart
+  login: Login
+  register: Register
+  sign_up: SIGN UP
+  send_password_reset: Send password reset
+  reset_password: Reset Password
+
+title:
+  new_arrivals: New Arrivals
+  navigation: Navigation
+  categories: Categories
+  search: Search
+  wishlist: Wishlist
+  cart: Cart
+  delivery_address: Delivery Address
+  payment: Payment
+
+text:
+  shopping_platform: Shopping Platform
+  no_products_found: No Products Found
+  cart_empty: Your cart is empty
+  please_set_shipping_address: Please set your shipping address
+  total: Total
+  pay_now_with: Pay now with
+  click_to_view: Click to view
+  loading: Loading
+  product_search_empty: Enter your search query above
+  shop_terms: Terms
+  shop_privacy: Privacy
+  forgot_password: Forgot your password?
+  password_reset_sent: Password Reset Sent
+  load_more: Load more
+  subscribe: Subscribe
+  each: each
+
+input:
+  product_search: Search by product name
+
+label:
+  first_name: First Name
+  username: Username
+  last_name: Last Name
+  phone: Phone
+  email_username: Email Or Username
+  email: Email
+  password: Password
+  confirm_password: Confirm Password
+  address: Address
+  address_2: Address (2)
+  postal_code: Postal Code
+  city: City
+  numeric_id: Numeric ID
+  shop: Shop
+  payment_method: Payment Method
+  status: Status
+  payment_status: Payment Status
+  total: Total
+  total_excluding_tax: Total excluding tax
+  shipping: Shipping
+  total_tax: Total tax
+  quantity: Quantity
+  name: Name
+
+placeholder:
+  first_name: First name
+  username: Username
+  last_name: Last name
+  mobile_number: Mobile number
+  email_username: Email Or Username
+  email: Email
+  address: Address line 1
+  address_line_2: Address line two
+  postal_code: Postal code
+  city: City
+  password: Password
+  confirm_password: Confirm password
+  name: Name Namesen
+
+error:
+  invalid_first_name: Invalid first name
+  invalid_username: Invalid username
+  invalid_last_name: Invalid last name
+  invalid_phone_number: Invalid phone number
+  invalid_email: Invalid email
+  invalid_address: Invalid address
+  invalid_postal_code: Invalid postal code
+  invalid_city: Invalid city
+
+tab:
+  welcome: Welcome
+  account_edit: Account Edit
+  delivery_address: Delivery Address
+  your_orders: Your Orders
+  login: Login
+  register: Register
+  password_reset: Password Reset
+
+greeting:
+  hello: Hello
+
+status:
+  complete: Complete
+  incomplete: Incomplete
+  paid: Paid
+  unpaid: Unpaid
+
+heading:
+  items: Items
+  shipping: Shipping
+
+notify:
+  session_load_error: Session Load Error
+  success: Success
+  request_failed: Request Failed
+  invalid_fields: Invalid fields
+  added_to_cart: Added to cart
+  select_product_options: Please select product options
+  added_to_wishlist: Added to wishlist
+  removed_from_wishlist: Removed from wishlist
+  profile_edited: Profile Edited
+  authentication_failed: Authentication Failed
+  authentication_success: Authentication Success
+  password_reset_success: Password Reset Success

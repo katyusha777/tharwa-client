@@ -1,0 +1,309 @@
+{
+  "id": "ddfa3cab-b760-42f2-8f91-315811cfe92b",
+  "user_id": "019809bd-51c4-728e-b971-5ba72e23d003",
+  "name": "Main investments",
+  "created_at": "2025-07-14 22:00:42.297",
+  "updated_at": null,
+  "analysis": {
+    "overall_analysis": "The portfolio is moderately diversified across sectors including precious metals (Gold), technology (NVIDIA), digital assets (USDT), fintech (Nu Holdings), energy\/crypto mining (TeraWulf), and regional banking (Doha Bank, Qatar Islamic Bank). However, there is a significant concentration risk with Philip Morris International (PM) representing approximately 76% of the portfolio value, which is also non-Shariah compliant. Sentiment is generally positive for most assets except TeraWulf and the regional banks which show neutral to cautious sentiment. The portfolio aligns moderately with prudent management but needs rebalancing to reduce concentration and compliance risks.",
+    "portfolio_recommendations": [
+      "Reduce exposure to Philip Morris International due to its large concentration and non-Shariah compliance, reallocating proceeds to increase holdings in Shariah-compliant assets.",
+      "Consider trimming TeraWulf due to recent financial challenges and volatility, while monitoring its HPC pivot for potential recovery.",
+      "Increase diversification by adding more Shariah-compliant assets in sectors such as technology, fintech, and precious metals to balance risk and growth potential."
+    ],
+    "compliance_summary": "The portfolio is predominantly Shariah-compliant with all assets except Philip Morris International, which constitutes a large portion of the portfolio and poses a compliance risk. The presence of a single non-compliant asset significantly weakens the overall compliance profile. Strength lies in the inclusion of Shariah-compliant financial institutions and technology companies, but the large non-compliant holding requires attention.",
+    "asset_insights": [
+      {
+        "id": "10c7c909-e1a3-4d6f-8196-8c5a78ce87eb",
+        "name": "Gold",
+        "symbol": "XAU",
+        "insight": "Gold is a positive portfolio diversifier with strong safe-haven demand amid geopolitical tensions and central bank buying. Forecasts suggest price growth to $3,600-$3,700 by end 2025, supporting its role as a stable, Shariah-compliant asset."
+      },
+      {
+        "id": "6adbddde-15c7-4ef0-8457-fcf0ddbd8ad0",
+        "name": "NVIDIA Corporation",
+        "symbol": "NVDA",
+        "insight": "NVIDIA is a leading AI chipmaker with robust revenue growth and market leadership in AI hardware\/software. Positive sentiment and strong financials make it a growth driver and Shariah-compliant technology holding."
+      },
+      {
+        "id": "2398b956-76e3-4e2d-94a7-ea953db469d2",
+        "name": "USD Tether",
+        "symbol": "USDT",
+        "insight": "USDT is a stablecoin with neutral sentiment due to regulatory scrutiny and transparency concerns. It provides liquidity and stability in digital assets and is Shariah-compliant, but carries inherent crypto market risks."
+      },
+      {
+        "id": "66e611c9-291d-4e6d-972f-8a2a71467ac3",
+        "name": "Nu Holdings Ltd. Class A",
+        "symbol": "NU",
+        "insight": "Nu Holdings is a fast-growing Latin American digital bank with strong customer growth and profitability. Positive analyst ratings and expansion plans support its role as a Shariah-compliant fintech growth asset."
+      },
+      {
+        "id": "336ed5c5-1a8c-41c5-87e0-2c3021da675d",
+        "name": "TeraWulf Inc.",
+        "symbol": "WULF",
+        "insight": "TeraWulf is pivoting from bitcoin mining to high-performance computing with zero-carbon energy focus. Despite recent financial losses and volatility, its strategic growth in HPC offers long-term potential but requires cautious monitoring."
+      },
+      {
+        "id": "0066aa83-b773-438b-a851-db34286fcf8e",
+        "name": "Doha Bank Q.P.S.C.",
+        "symbol": "DHBK",
+        "insight": "Doha Bank is a regional conventional bank with stable credit ratings but modest profit growth and minor stock fluctuations. It is Shariah-compliant and provides regional banking exposure with neutral sentiment."
+      },
+      {
+        "id": "b8a8298e-6813-4106-aa17-575887557ca0",
+        "name": "Qatar Islamic Bank (Q.P.S.C.)",
+        "symbol": "QIBK",
+        "insight": "Qatar Islamic Bank is a leading Shariah-compliant Islamic bank with stable fundamentals and credit ratings. Recent income declines temper sentiment, but it remains a core regional financial holding."
+      },
+      {
+        "id": "09023076-95da-47a4-af06-2c1e6212bf2a",
+        "name": "Philip Morris International Inc",
+        "symbol": "PM",
+        "insight": "Philip Morris is a large tobacco company transitioning to smoke-free products with strong financial performance and positive outlook. However, it is non-Shariah compliant and represents a significant concentration risk in the portfolio."
+      }
+    ],
+    "watchlist": [
+      "Shariah-compliant technology and fintech sectors for growth and diversification",
+      "Sustainable energy and high-performance computing sectors, monitoring TeraWulf's HPC expansion",
+      "Regional Islamic banking and financial services in GCC and emerging markets"
+    ]
+  },
+  "totals": {
+    "USD": 632138.14,
+    "QAR": 27576
+  },
+  "assets": [
+    {
+      "id": "db97cb07-5c58-4243-afae-056017412d07",
+      "portfolio_id": "ddfa3cab-b760-42f2-8f91-315811cfe92b",
+      "asset_id": "10c7c909-e1a3-4d6f-8196-8c5a78ce87eb",
+      "units": 17,
+      "created_at": "2025-07-14 23:08:35.816",
+      "updated_at": null,
+      "asset": {
+        "id": "10c7c909-e1a3-4d6f-8196-8c5a78ce87eb",
+        "symbol": "XAU",
+        "name": "Gold",
+        "asset_type": "commodity",
+        "exchange": null,
+        "is_shariah_compliant": true,
+        "zoya_compliance_data": null,
+        "created_at": "2025-07-14 22:39:24.312",
+        "updated_at": null,
+        "currency": "USD",
+        "latest_value": "3344.7300",
+        "exchange_country": "US",
+        "sentiment_analysis": "The overall sentiment for Gold (XAU) is positive based on multiple sources forecasting price growth and strong demand. Analysts predict gold prices could reach between $3,600 and $3,700 by the end of 2025, supported by safe-haven demand amid geopolitical tensions and central bank reserve accumulation. The Federal Reserve's dovish stance and ongoing trade uncertainties further bolster gold's appeal. Despite some short-term technical pullbacks, the long-term uptrend and bullish forecasts from institutions like Goldman Sachs indicate strong fundamentals and investor confidence.",
+        "sentiment_score": 1,
+        "last_sentiment_update": "2025-07-15T00:42:01.000000Z",
+        "last_shariah_check": null
+      }
+    },
+    {
+      "id": "85069b32-25a7-41af-bd97-809c104acef6",
+      "portfolio_id": "ddfa3cab-b760-42f2-8f91-315811cfe92b",
+      "asset_id": "6adbddde-15c7-4ef0-8457-fcf0ddbd8ad0",
+      "units": 220,
+      "created_at": "2025-07-14 23:10:35.15",
+      "updated_at": null,
+      "asset": {
+        "id": "6adbddde-15c7-4ef0-8457-fcf0ddbd8ad0",
+        "symbol": "NVDA",
+        "name": "NVIDIA Corporation",
+        "asset_type": "stock",
+        "exchange": null,
+        "is_shariah_compliant": true,
+        "zoya_compliance_data": {
+          "isCompliant": false,
+          "symbol": "NVDA",
+          "name": "NVIDIA Corp",
+          "exchange": "XNGS",
+          "status": "COMPLIANT"
+        },
+        "created_at": "2025-07-14 22:53:47.813",
+        "updated_at": null,
+        "currency": "USD",
+        "latest_value": "164.0700",
+        "exchange_country": "US",
+        "sentiment_analysis": "NVIDIA has demonstrated strong financial performance with record revenues in multiple recent quarters, including a 69% year-over-year revenue increase in Q1 FY2026 and a 94% increase in Q3 FY2025. The company briefly reached a $4 trillion market capitalization, becoming the first public company to do so, reflecting strong investor confidence and leadership in AI chip technology. Despite some export restrictions impacting revenue guidance, NVIDIA's dominant position in AI hardware and software, ongoing growth in data center and professional visualization segments, and positive analyst outlooks support an overall positive market sentiment.",
+        "sentiment_score": 1,
+        "last_sentiment_update": "2025-07-15T00:34:48.000000Z",
+        "last_shariah_check": "2025-07-15T01:14:28.000000Z"
+      }
+    },
+    {
+      "id": "52e9ee0d-6429-49d3-940f-12e61efc261b",
+      "portfolio_id": "ddfa3cab-b760-42f2-8f91-315811cfe92b",
+      "asset_id": "2398b956-76e3-4e2d-94a7-ea953db469d2",
+      "units": 50500.53,
+      "created_at": "2025-07-14 23:11:44.277",
+      "updated_at": null,
+      "asset": {
+        "id": "2398b956-76e3-4e2d-94a7-ea953db469d2",
+        "symbol": "USDT",
+        "name": "USD Tether",
+        "asset_type": "crypto",
+        "exchange": null,
+        "is_shariah_compliant": true,
+        "zoya_compliance_data": null,
+        "created_at": "2025-07-14 23:11:19.998",
+        "updated_at": null,
+        "currency": "USD",
+        "latest_value": "1.0000",
+        "exchange_country": "US",
+        "sentiment_analysis": "The overall sentiment for USDT (Tether) is neutral. The asset maintains a stable price close to $1.00 with a very large market cap and high trading volume, reflecting its continued widespread adoption and utility as a stablecoin. However, there are ongoing concerns and controversies regarding transparency and reserve backing, as well as regulatory scrutiny and the planned discontinuation of USDT on several legacy blockchains. While Tether is expanding into Bitcoin mining and adapting to regulatory environments, these developments balance out the risks, resulting in a neutral market sentiment.",
+        "sentiment_score": 0,
+        "last_sentiment_update": "2025-07-15T00:36:36.000000Z",
+        "last_shariah_check": null
+      }
+    },
+    {
+      "id": "313a3364-f0b1-4812-a5a4-b38479fd023d",
+      "portfolio_id": "ddfa3cab-b760-42f2-8f91-315811cfe92b",
+      "asset_id": "66e611c9-291d-4e6d-972f-8a2a71467ac3",
+      "units": 170,
+      "created_at": "2025-07-14 23:12:23.263",
+      "updated_at": null,
+      "asset": {
+        "id": "66e611c9-291d-4e6d-972f-8a2a71467ac3",
+        "symbol": "NU",
+        "name": "Nu Holdings Ltd. Class A",
+        "asset_type": "stock",
+        "exchange": null,
+        "is_shariah_compliant": true,
+        "zoya_compliance_data": {
+          "isCompliant": false,
+          "symbol": "NU",
+          "name": "Nu Holdings Ltd - Ordinary Shares Class A",
+          "exchange": "XNYS",
+          "status": "COMPLIANT"
+        },
+        "created_at": "2025-07-14 22:53:30.656",
+        "updated_at": null,
+        "currency": "USD",
+        "latest_value": "13.0700",
+        "exchange_country": "US",
+        "sentiment_analysis": "Nu Holdings Ltd. demonstrates strong positive market sentiment supported by significant customer growth, reaching 118.6 million customers globally as of Q1 2025, with over 4 million added in a single quarter. The company reported robust financial results including a 65% year-over-year revenue increase to $2.8 billion and net income of $487 million. Strategic expansions in Brazil, Mexico, and Colombia, alongside new product introductions and acquisitions like AI solutions provider Hyperplane, indicate strong growth potential. Analyst ratings, such as Morgan Stanley's reiterated Buy with a price target of $18, further reinforce positive investor outlook.",
+        "sentiment_score": 1,
+        "last_sentiment_update": "2025-07-15T00:41:54.000000Z",
+        "last_shariah_check": "2025-07-15T01:14:27.000000Z"
+      }
+    },
+    {
+      "id": "18e2e426-2ec6-48b9-a806-38c90c8b89e0",
+      "portfolio_id": "ddfa3cab-b760-42f2-8f91-315811cfe92b",
+      "asset_id": "336ed5c5-1a8c-41c5-87e0-2c3021da675d",
+      "units": 90,
+      "created_at": "2025-07-14 23:12:32.399",
+      "updated_at": null,
+      "asset": {
+        "id": "336ed5c5-1a8c-41c5-87e0-2c3021da675d",
+        "symbol": "WULF",
+        "name": "TeraWulf Inc.",
+        "asset_type": "stock",
+        "exchange": null,
+        "is_shariah_compliant": true,
+        "zoya_compliance_data": {
+          "isCompliant": false,
+          "symbol": "COMPLIANT",
+          "name": "TeraWulf Inc",
+          "exchange": "XNCM",
+          "status": "NON_COMPLIANT"
+        },
+        "created_at": "2025-07-14 22:53:12.611",
+        "updated_at": null,
+        "currency": "USD",
+        "latest_value": "5.1100",
+        "exchange_country": "US",
+        "sentiment_analysis": "TeraWulf Inc. is actively expanding its high-performance computing (HPC) hosting capacity and bitcoin mining operations powered predominantly by zero-carbon energy, reflecting growth initiatives and strategic partnerships such as the Core42 lease agreement. However, the company faces challenges including a recent negative adjusted EBITDA due to temporary power price spikes and increased costs from expansion efforts. The stock has experienced significant volatility and a notable decline in 2025, with analyst revenue and earnings forecasts revised downward, indicating some investor caution. Overall, the news presents a balanced view of ongoing growth potential tempered by operational and market headwinds.",
+        "sentiment_score": 0,
+        "last_sentiment_update": "2025-07-15T00:37:50.000000Z",
+        "last_shariah_check": "2025-07-15T01:14:30.000000Z"
+      }
+    },
+    {
+      "id": "0298c3f4-3e5b-48b0-8cde-32280fffcf15",
+      "portfolio_id": "ddfa3cab-b760-42f2-8f91-315811cfe92b",
+      "asset_id": "0066aa83-b773-438b-a851-db34286fcf8e",
+      "units": 2230,
+      "created_at": "2025-07-14 23:36:42.018",
+      "updated_at": null,
+      "asset": {
+        "id": "0066aa83-b773-438b-a851-db34286fcf8e",
+        "symbol": "DHBK",
+        "name": "Doha Bank Q.P.S.C.",
+        "asset_type": "stock",
+        "exchange": null,
+        "is_shariah_compliant": true,
+        "zoya_compliance_data": null,
+        "created_at": "2025-07-14 23:29:04.64",
+        "updated_at": null,
+        "currency": "QAR",
+        "latest_value": "2.5000",
+        "exchange_country": "QA",
+        "sentiment_analysis": "Recent information on Doha Bank Q.P.S.C. (DHBK) shows stable credit ratings affirmed by Fitch at 'A' with a stable outlook, indicating no immediate financial distress. The bank operates in multiple segments and regions, providing a broad range of banking and insurance services. However, there is a noted decline in profits in past years (e.g., a 25.2% drop in 2018), and the stock price has shown minor fluctuations without clear strong upward or downward trends. Upcoming earnings reports and routine investor calls suggest ongoing normal operations without significant positive or negative developments.",
+        "sentiment_score": 0,
+        "last_sentiment_update": "2025-07-15T00:37:55.000000Z",
+        "last_shariah_check": null
+      }
+    },
+    {
+      "id": "336c1885-0ed9-41aa-b66c-a3d67afb0bbe",
+      "portfolio_id": "ddfa3cab-b760-42f2-8f91-315811cfe92b",
+      "asset_id": "b8a8298e-6813-4106-aa17-575887557ca0",
+      "units": 980,
+      "created_at": "2025-07-14 23:36:48.438",
+      "updated_at": null,
+      "asset": {
+        "id": "b8a8298e-6813-4106-aa17-575887557ca0",
+        "symbol": "QIBK",
+        "name": "Qatar Islamic Bank (Q.P.S.C.)",
+        "asset_type": "stock",
+        "exchange": null,
+        "is_shariah_compliant": true,
+        "zoya_compliance_data": null,
+        "created_at": "2025-07-14 23:32:04.567",
+        "updated_at": null,
+        "currency": "QAR",
+        "latest_value": "22.4500",
+        "exchange_country": "QA",
+        "sentiment_analysis": "The available information on Qatar Islamic Bank (QIBK) indicates a stable and established financial institution with a significant market share in Qatar's Islamic banking sector. Credit ratings from Fitch and Moody's have been affirmed with stable outlooks, and the bank has successfully issued sukuk with strong investor demand. However, recent quarterly net income showed a decline of approximately 26%, and there is no clear indication of major growth or negative events. Overall, the news reflects routine operations and stable fundamentals without strong positive or negative trends.",
+        "sentiment_score": 0,
+        "last_sentiment_update": "2025-07-15T00:38:00.000000Z",
+        "last_shariah_check": null
+      }
+    },
+    {
+      "id": "8f3398df-2004-42a0-9941-07365b757ad8",
+      "portfolio_id": "ddfa3cab-b760-42f2-8f91-315811cfe92b",
+      "asset_id": "09023076-95da-47a4-af06-2c1e6212bf2a",
+      "units": 2700,
+      "created_at": "2025-07-15 01:34:29.118",
+      "updated_at": null,
+      "asset": {
+        "id": "09023076-95da-47a4-af06-2c1e6212bf2a",
+        "symbol": "PM",
+        "name": "Philip Morris International Inc",
+        "asset_type": "stock",
+        "exchange": null,
+        "is_shariah_compliant": false,
+        "zoya_compliance_data": {
+          "isCompliant": false,
+          "symbol": "PM",
+          "name": "Philip Morris International Inc",
+          "exchange": "XNYS",
+          "status": "NON_COMPLIANT"
+        },
+        "created_at": "2025-07-15 01:04:22.438",
+        "updated_at": null,
+        "currency": "USD",
+        "latest_value": "180.0000",
+        "exchange_country": "US",
+        "sentiment_analysis": "Philip Morris International has demonstrated strong financial performance with a 56.4% increase in adjusted operating income on an organic basis and raised its 2025 full-year adjusted diluted EPS forecast. The company is successfully growing its smoke-free product segment, which accounted for 42% of revenue by March 2025, and its nicotine pouch brand ZYN is performing ahead of expectations. PMI's inclusion in sustainability indices and its strategic focus on a smoke-free future further support a positive outlook. Despite some legal and regulatory challenges, the overall market sentiment is optimistic, reflected in a nearly 10% rise in shares following positive profit growth forecasts.",
+        "sentiment_score": 1,
+        "last_sentiment_update": "2025-07-15T01:15:30.000000Z",
+        "last_shariah_check": "2025-07-15T01:14:28.000000Z"
+      }
+    }
+  ]
+}

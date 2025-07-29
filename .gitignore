@@ -1,0 +1,14 @@
+.DS_Store
+.g-dist
+.vite-ssg-temp
+*.local
+dist
+dist-ssr
+node_modules
+.idea/
+*.log
+cypress/downloads
+.vscode/sftp.json
+
+# Sentry Config File
+.env.sentry-build-plugin

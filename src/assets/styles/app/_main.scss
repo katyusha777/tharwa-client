@@ -1,0 +1,52 @@
+
+html,
+body,
+#app {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background: var(--color-darkest);
+  color-scheme: dark;
+}
+
+.overflow_effect_perfect {
+  &::-webkit-scrollbar {
+    cursor: pointer;
+    width: 3px;
+    height: 3px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: rgb(208, 208, 208);
+      cursor: pointer;
+    }
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.v-popper__popper {
+  z-index: 999999999999 !important;
+}
