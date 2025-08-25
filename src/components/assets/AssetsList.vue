@@ -1,15 +1,14 @@
 <script setup lang="ts">
-import type { IPortfolioAsset, TSentimentScore } from '~/types/portfolio'
+import type { IPortfolioAsset, TSentimentScore } from '@types'
 import { Icon } from '@iconify/vue'
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
+import { useModalStore } from '~/stores/modal'
 
-interface Props {
+defineProps<{
   assets: IPortfolioAsset[]
-}
+}>()
 
-const props = defineProps<Props>()
-
-// State
+const modalStore = useModalStore()
 const expandedAssets = ref<Set<string>>(new Set())
 
 // Helper functions
@@ -62,49 +61,22 @@ function getSentimentLabel(score: TSentimentScore) {
   }
 }
 
-function formatDate(dateString: string) {
-  if (!dateString)
-    return 'N/A'
-  const date = new Date(dateString)
-  return date.toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' })
-}
-
-function toggleExpanded(assetId: string) {
-  if (expandedAssets.value.has(assetId)) {
-    expandedAssets.value.delete(assetId)
-  }
-  else {
-    expandedAssets.value.add(assetId)
-  }
-}
-
-function isExpanded(assetId: string) {
-  return expandedAssets.value.has(assetId)
-}
-
 function handleEdit(asset: IPortfolioAsset) {
-  console.log('Edit asset:', asset)
+  modalStore.openAssetForm(asset.id)
 }
 
 function handleDelete(asset: IPortfolioAsset) {
   console.log('Delete asset:', asset)
 }
-
-// Group assets by compliance status
-const groupedAssets = computed(() => {
-  const compliant = props.assets.filter(a => a.asset.is_shariah_compliant)
-  const nonCompliant = props.assets.filter(a => !a.asset.is_shariah_compliant)
-  return { compliant, nonCompliant }
-})
 </script>
 
 <template>
   <div class="space-y-3">
     <!-- Assets List -->
-    <div
+    <article
       v-for="asset in assets"
       :key="asset.id"
-      class="bg-black border border-gray-800 rounded-xl hover:border-gray-700 transition-all duration-200"
+      class="asset-item bg-black border border-gray-800 rounded-xl hover:border-gray-700 transition-all duration-200"
     >
       <!-- Main Content -->
       <div class="p-4">
@@ -129,7 +101,7 @@ const groupedAssets = computed(() => {
           </div>
 
           <!-- Action Buttons -->
-          <div class="flex items-center gap-2">
+          <div v-if="false" class="flex items-center gap-2">
             <button
               class="p-1 transition-colors group"
               aria-label="Edit asset"
@@ -186,35 +158,9 @@ const groupedAssets = computed(() => {
               {{ getSentimentLabel(asset.asset.sentiment_score) }}
             </span>
           </div>
-          <button
-            class="px-3 py-1 bg-gray-800 hover:bg-gray-700 rounded text-xs text-gray-300 hover:text-white transition-all flex items-center gap-1"
-            @click="toggleExpanded(asset.id)"
-          >
-            <span>{{ isExpanded(asset.id) ? 'Less' : 'More' }} info</span>
-            <Icon
-              :icon="isExpanded(asset.id) ? 'mdi:chevron-up' : 'mdi:chevron-down'"
-              class="text-sm"
-            />
-          </button>
         </div>
       </div>
-
-      <!-- Expanded Sentiment Analysis -->
-      <div
-        v-if="isExpanded(asset.id) && asset.asset.sentiment_analysis"
-        class="border-t border-gray-800"
-      >
-        <div class="p-4">
-          <p class="text-sm text-gray-400 leading-relaxed">
-            {{ asset.asset.sentiment_analysis }}
-          </p>
-          <div class="flex items-center gap-4 mt-3 text-xs text-gray-600">
-            <span>Last updated: {{ formatDate(asset.asset.last_sentiment_update) }}</span>
-            <span>Type: {{ asset.asset.asset_type }}</span>
-          </div>
-        </div>
-      </div>
-    </div>
+    </article>
 
     <!-- Empty State -->
     <div v-if="assets.length === 0" class="text-center py-12">
@@ -227,6 +173,11 @@ const groupedAssets = computed(() => {
 </template>`
 
 <style scoped>
+.asset-item {
+  background: var(--card-bg);
+  border-top:1px solid rgb(255 255 255 / 6%);
+}
+
 /* Smooth transitions */
 .transition-all {
   transition-property: all;

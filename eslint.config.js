@@ -11,6 +11,7 @@ export default antfu(
       '@typescript-eslint/no-unused-vars': ['error', { argsIgnorePattern: '^_' }],
       'import/extensions': ['error', 'never', { ts: 'never', tsx: 'never' }],
       'no-unused-vars': 'off',
+      'vue/no-template-shadow': 'off',
       'unused-imports/no-unused-vars': 'off',
       'ts/no-unused-vars': 'off',
       'no-console': 'off',

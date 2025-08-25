@@ -1,99 +1,19 @@
-/** Toast **/
-.toast {
-  z-index: 20000000 !important;
+/** Vant **/
+.van-overlay {
+    backdrop-filter: blur(2px);
 }
 
-
-/** Intercom **/
-.intercom-namespace .intercom-with-namespace-15zl8wf {
-  right:123px;
+.van-popup {
+    backdrop-filter: blur(8px);
+    border-top:1px solid rgb(255 255 255 / 15%);
 }
 
-/** Adroll **/
-.adroll_consent_persistent_icon {
-  display:none
-}
-
-/** Vue final modal **/
-.vfm--overlay {
-    backdrop-filter: blur(5px);
-}
-
-.vfm__content {
-  max-width: 100%;
-  border: none;
-  transform: translate(-50%, -50%);
-  left: 50%;
-  top: 50%;
-  position: fixed;
-}
-
-
-/** Antd **/
-
-.ant-slider-horizontal {
-  width:100%;
-}
-
-textarea.ant-input {
+.van-action-sheet__header {
     color:#FFF;
-    outline: none;
-
 }
 
-.ant-checkbox-wrapper {
-    flex-direction: row-reverse;
-    font-weight: bold;
 
-    .ant-checkbox-inner {
-        background-color: var(--color-text);
-        border-color: var(--color-text);
-    }
-
-    .ant-checkbox-checked {
-
-        .ant-checkbox-inner {
-            background-color: var(--color-text);
-            border-color: var(--color-text);
-
-            &:after {
-                border-color: var(--color-darkest);
-            }
-        }
-    }
-
-    span {
-        color: var(--color-text);
-    }
-}
-
-.ant-radio-group {
-
-    .ant-radio-button-wrapper {
-        margin: 0 0.375rem;
-        border-radius: 5px;
-        border: 1px solid;
-        background-color: var(--color-dark-mid);
-        border-color: var(--color-dark-lightest);
-        height: 40px;
-        line-height: 40px;
-        padding: 0 2rem;
-        font-weight: bold;
-
-        &:before {
-            display:none;
-        }
-
-        span {
-            color: var(--color-dark-lightest);;
-        }
-
-        &.ant-radio-button-wrapper-checked {
-            border-color: var(--color-gold-dark);
-
-            span {
-                color: var(--color-gold-dark);
-            }
-        }
-    }
+/** Prime vue **/
+.p-select-overlay {
+    z-index: 10001 !important;
 }

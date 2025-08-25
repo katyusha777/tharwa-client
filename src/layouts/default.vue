@@ -11,6 +11,7 @@ const { authenticatedUser } = storeToRefs(authStore)
   </RouterView>
 
   <TabBar />
+  <Modals />
 
   <footer
     class="border-t-2 border-[#181E29] pl-[10px] flex items-center justify-center text-white overflow-hidden transition-all duration-500 absolute bottom-0 z-[99]"

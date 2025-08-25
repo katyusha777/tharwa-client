@@ -1,9 +1,19 @@
 <script setup lang="ts">
-defineOptions({
-  name: 'IndexPage',
-})
+import { storeToRefs } from 'pinia'
+import { usePortfolioStore } from '~/stores/portfolio'
+
+const portfolioStore = usePortfolioStore()
+const { activePortfolio } = storeToRefs(portfolioStore)
 </script>
 
 <template>
-  <PortfolioView />
+  <AppHeader />
+  <NetWorth />
+  <AssetView />
+  <AssetSearchHeader />
+  <AssetForm />
+  <PortfolioAssetComposition />
+  <ButtonComponent label="Test" />
+  <TitleComponent title="Wishlist" />
+  <AssetsList v-if="activePortfolio" :assets="activePortfolio.assets" />
 </template>

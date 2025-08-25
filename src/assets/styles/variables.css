@@ -1,56 +1,27 @@
 :root {
-    /* Colors */
-    --color-white: #FFFFFF;
-    --color-darkest: #131517;
-    --color-inbetween-gray: #17191A;
-    --color-dark-mid: #0E121A;
-    --color-dark-light: #40464B;
-    --color-dark-lightest: #919AA5;
-    --color-gold-light: #FFDC60;
-    --color-gold-main: #FEBC59;
-    --color-orange-mid: #FAA94C;
-    --color-gold-dark: #DC8319;
-    --color-text: #E3CBAA;
-    --color-text-gray: #6E614F;
-    --color-red: #fa4c4c;
-    --color-red-dark: #992928;
-    --color-green: #2BD446;
-    --color-blue: #32BDFF;
-    --color-pink: #FF439A;
 
-  /** Items/boxes */
-  --corner-color: #FFF;
+    /* COLORS */
+    --color-gold: #ffa300;
+    --color-yellow: #ffa300;
+    --color-green: #88C100;
+    --color-red: #FF003C;
 
-    /* Rarity kinds */
-    --color-common: var(--color-dark-light);
-    --color-uncommon: var(--color-green);
-    --color-rare: var(--color-blue);
-    --color-epic: var(--color-pink);
-    --color-legendary: var(--color-gold-main);
+    --app-color: var(--color-gold);
+    --color-color-black: #201605;
+    --app-color-secondary: var(--color-green);
+    --color-fail: var(--color-red);
+    --color-success: var(--color-green);
 
-    /* Layout */
-    --header-height: 84px;
-    --container-width: 1520px;
-    --chat-width: 260px;
-    --logo-height: 48px;
+    --bg-dark:#120b1b;
+    --bg-dark-mid:#0c0c0d;
 
-    /* Element styles */
-    --border-radius: 10px;
+    --card-bg: var(--bg-dark-mid);
+
+    /* SIZES */
+    --app-width:340px;
+    --app-side-padding:1rem;
 
 
-  /* PvP unboxing */
-  --pvp-grid-col-width: 256px;
-  --pvp-header-height:118px;
-
-    /* Vant */
-  --van-count-down-text-color: #FFF;
-    --van-tabs-nav-background: transparent;
-    --van-tab-text-color: #FFF;
-    --van-field-label-color: #FFF;
-    --van-field-input-text-color: var(--color-gold-main);
-    --van-divider-border-color: var(--color-dark-light);
-    --van-cell-border-color: var(--color-dark-light);
-    --van-cell-background: var(--color-dark-mid);
-    --van-tab-active-text-color: var(--color-gold-main);
-    --van-tabs-bottom-bar-color: var(--color-gold-main);
+    /* VANT */
+    --van-popup-background: rgb(255 255 255 / 3%);
 }

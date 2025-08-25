@@ -3,6 +3,5 @@
 @use './app/typography';
 @use './app/overrides';
 @use './app/elements';
-
-
-@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600;700&family=Barlow:wght@300;400;500;600;700&family=Bungee&display=swap");
+@use './app/layout';
+@use './app/nav_tab_bars';

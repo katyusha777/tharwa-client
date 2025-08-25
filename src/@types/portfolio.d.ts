@@ -1,5 +1,11 @@
 export type TSentimentScore = -1 | 0 | 1
-export type TAssetType = 'stock' | 'commodity' | 'crypto' | 'fund'
+
+export interface IAssetFormDTO {
+  assetType: string
+  ticker: string
+  commodity: string | null
+  units: number
+}
 
 export interface AssetInsight {
   id: string

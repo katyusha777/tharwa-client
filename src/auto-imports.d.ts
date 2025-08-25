@@ -335,13 +335,13 @@ declare global {
   export type { Component, ComponentPublicInstance, ComputedRef, DirectiveBinding, ExtractDefaultPropTypes, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, MaybeRef, MaybeRefOrGetter, VNode, WritableComputedRef } from 'vue'
   import('vue')
   // @ts-ignore
-  export type { IBooleanResponse, TNullableTeamResponse, TGetPvpUnboxingList, TGetPvpUnboxingGame, TGetBoxesResponse, TGetInventoryBoxesResponse, TGetRewardBoxesClaimedResponse, TGetBoxResponse, TGetBoxItemsResponse, TPurchasedBoxesResponse, TSessionValidateResponse, TSessionResponse, TGetUserResponse, TWalletResponse, TUserPlayHistoryResponse, TUserTransactionHistoryResponse, TCheckoutResponse, TGetPaymentResponse, TGetChatMessagesResponse, TGetRouletteStatsResponse, TGetRouletteGameResponse, TInventoryResponse, TItemUpgradeCalculationResponse, TItemUpgradeResponse, TSkinsMarketplaceResponse, THigherLowerBetResponse, THigherLowerBetPlayResponse, TCreateDiceGameResponse, TGetDiceGameResponse, TGetPlayableDiceGameResponse, TListCompetitiveMissionsResponse, TListPersonalMissionsResponse, TGetCompetitiveMissionResponse, TGetPersonalMissionResponse } from './@types/api.d'
+  export type { IBooleanResponse } from './@types/api.d'
   import('./@types/api.d')
   // @ts-ignore
   export type { ILoginDTO, IRegisterDTO } from './@types/auth.d'
   import('./@types/auth.d')
   // @ts-ignore
-  export type { TSentimentScore, AssetInsight, IPortfolioAnalysis, ZoyaComplianceData, IAsset, IPortfolioAsset, IPortfolioTotals, IPortfolio } from './@types/portfolio.d'
+  export type { TSentimentScore, TAssetType, IAssetFormDTO, AssetInsight, IPortfolioAnalysis, ZoyaComplianceData, IAsset, IPortfolioAsset, IPortfolioTotals, IPortfolio } from './@types/portfolio.d'
   import('./@types/portfolio.d')
   // @ts-ignore
   export type { ISession } from './@types/session.d'
