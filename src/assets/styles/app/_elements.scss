@@ -12,7 +12,13 @@
     border: 2px solid var(--app-color);
     transition: 0.2s ease all;
     display:block;
-    width:100%;
+
+    &.text-button {
+      border:none;
+      background: transparent;
+      padding:0;
+      height:auto;
+    }
 
     &:hover {
       background: var(--app-color);

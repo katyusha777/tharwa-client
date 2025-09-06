@@ -6,6 +6,11 @@
     --color-green: #88C100;
     --color-red: #FF003C;
 
+    --color-commodity: #fbbf24;
+    --color-stock: #60a5fa;
+    --color-real_estate: #34d399;
+    --color-crypto: #c084fc;
+
     --app-color: var(--color-gold);
     --color-color-black: #201605;
     --app-color-secondary: var(--color-green);

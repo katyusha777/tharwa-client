@@ -341,7 +341,7 @@ declare global {
   export type { ILoginDTO, IRegisterDTO } from './@types/auth.d'
   import('./@types/auth.d')
   // @ts-ignore
-  export type { TSentimentScore, TAssetType, IAssetFormDTO, AssetInsight, IPortfolioAnalysis, ZoyaComplianceData, IAsset, IPortfolioAsset, IPortfolioTotals, IPortfolio } from './@types/portfolio.d'
+  export type { TSentimentScore, TAssetType, IAssetFormDTO, AssetInsight, IPortfolioAnalysis, ZoyaComplianceData, IAsset, TPortfolioAsset, IPortfolioTotals, IPortfolio } from './@types/portfolio.d'
   import('./@types/portfolio.d')
   // @ts-ignore
   export type { ISession } from './@types/session.d'

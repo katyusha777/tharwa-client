@@ -1,17 +1,23 @@
 import type { IOption } from '~/@types'
-import type { TAssetType } from '~/@types/assets'
+import type { TAssetType, TCommodity } from '~/@types/assets'
 
-export const commodities = [
-  { value: 'XAU', name: 'Gold' },
-  { value: 'XAG', name: 'Silver' },
-  { value: 'XPT', name: 'Platinum' },
-  { value: 'XPD', name: 'Palladium' },
-  { value: 'CL', name: 'Crude Oil (WTI)' },
-  { value: 'BRN', name: 'Crude Oil (Brent)' },
-  { value: 'NG', name: 'Natural Gas' },
-  { value: 'XCU', name: 'Copper' },
-  { value: 'XAL', name: 'Aluminum' },
+export const commodities: Array<{ value: TCommodity, name: string }> = [
+  { value: 'gold', name: 'Gold' },
+  { value: 'silver', name: 'Silver' },
+  { value: 'platinum', name: 'Platinum' },
+  { value: 'copper', name: 'Copper' },
+  { value: 'gasoline', name: 'Gasoline' },
+  { value: 'brent', name: 'Crude Oil (Brent)' },
 ]
+
+export const commodityUnits: Record<TCommodity, string> = {
+  brent: 'usd/bbl',
+  copper: 'usd/lbs',
+  gasoline: 'usd/gal',
+  platinum: 'usd/oz',
+  silver: 'usd/oz',
+  gold: 'usd/oz',
+}
 
 export const assetTypes: Array<IOption<TAssetType>> = [
   { name: 'Stock', value: 'stock' },

@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import type { IPortfolio, IPortfolioAsset } from '@/types/portfolio'
+import type { IPortfolio, TPortfolioAsset } from '@/types/portfolio'
 import { computed } from 'vue'
 
 const { portfolio } = defineProps<{ portfolio: IPortfolio }>()
 
-const nonCompliantAssets = computed<IPortfolioAsset[]>(() =>
+const nonCompliantAssets = computed<TPortfolioAsset[]>(() =>
   portfolio.assets.filter(a => !a.asset.is_shariah_compliant),
 )
 

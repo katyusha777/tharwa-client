@@ -1,14 +1,45 @@
-<script setup>
+<script setup lang="ts">
+import type { TAssetType } from '~/@types/assets'
+import type { TMonetaryValue } from '~/@types/money'
 import Card from 'primevue/card'
 import MeterGroup from 'primevue/metergroup'
 import { ref } from 'vue'
 import { assetIcon } from '~/consts/icons.js'
 
+const props = defineProps<{
+  totalValue: number
+  totals: Record<TAssetType, TMonetaryValue>
+}>()
+
 const value = ref([
-  { label: 'Real Estate', color1: '#34d399', color2: '#fbbf24', value: 25, icon: assetIcon.realEstate },
-  { label: 'Commodities', color1: '#fbbf24', color2: '#60a5fa', value: 25, icon: assetIcon.commodity },
-  { label: 'Stocks', color1: '#60a5fa', color2: '#c084fc', value: 25, icon: assetIcon.stock },
-  { label: 'Crypto', color1: '#c084fc', color2: '#c084fc', value: 25, icon: assetIcon.crypto },
+  {
+    label: 'Real Estate',
+    color1: '#34d399',
+    color2: '#fbbf24',
+    value: Number.parseInt(((props.totals.real_estate.value / props.totalValue) * 100).toString()),
+    icon: assetIcon.realEstate,
+  },
+  {
+    label: 'Commodities',
+    color1: '#fbbf24',
+    color2: '#60a5fa',
+    value: Number.parseInt(((props.totals.commodity.value / props.totalValue) * 100).toString()),
+    icon: assetIcon.commodity,
+  },
+  {
+    label: 'Stocks',
+    color1: '#60a5fa',
+    color2: '#c084fc',
+    value: Number.parseInt(((props.totals.stock.value / props.totalValue) * 100).toString()),
+    icon: assetIcon.stock,
+  },
+  {
+    label: 'Crypto',
+    color1: '#c084fc',
+    color2: '#c084fc',
+    value: Number.parseInt(((props.totals.crypto.value / props.totalValue) * 100).toString()),
+    icon: assetIcon.crypto,
+  },
 ])
 </script>
 

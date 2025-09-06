@@ -1,11 +1,7 @@
-export type TSentimentScore = -1 | 0 | 1
+import type { ICommodity, ICrypto, IRealEstate, IStock, TAssetType } from '~/@types/assets'
+import type { TMonetaryValue } from '~/@types/money'
 
-export interface IAssetFormDTO {
-  assetType: string
-  ticker: string
-  commodity: string | null
-  units: number
-}
+export type TSentimentScore = -1 | 0 | 1
 
 export interface AssetInsight {
   id: string
@@ -30,43 +26,25 @@ export interface ZoyaComplianceData {
   status: string
 }
 
-export interface IAsset {
+export type TPortfolioAsset = {
   id: string
-  symbol: string
-  name: string
-  asset_type: TAssetType
-  exchange: string | null
-  is_shariah_compliant: boolean
-  zoya_compliance_data: ZoyaComplianceData
-  created_at: string // e.g., '2025-07-14 22:53:47.813'
-  updated_at: string | null
-  currency: string
-  latest_value: string // possibly parse to number downstream
-  exchange_country: string
-  sentiment_analysis: string
-  sentiment_score: TSentimentScore
-  last_sentiment_update: string // ISO format
-  last_shariah_check: string // ISO format
-}
-
-export interface IPortfolioAsset {
-  id: string
-  portfolio_id: string
+  value: TMonetaryValue
+  type: TAssetType
   asset_id: string
   units: number
-  asset: IAsset
-}
-
-export interface IPortfolioTotals {
-  USD?: number
-  QAR?: number
-}
+} & (
+    { type: 'real_estate', asset: IRealEstate } |
+    { type: 'stock', asset: IStock } |
+    { type: 'crypto', asset: ICrypto } |
+    { type: 'commodity', asset: ICommodity }
+    )
 
 export interface IPortfolio {
   id: string
   user_id: string
   name: string
+  total: TMonetaryValue
+  grouped_totals: Record<TAssetType, TMonetaryValue>
   analysis: IPortfolioAnalysis
-  assets: Array<IPortfolioAsset>
-  totals: IPortfolioTotals
+  assets: Array<TPortfolioAsset>
 }

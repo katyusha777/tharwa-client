@@ -17,7 +17,7 @@ function getSentimentColor(score: TSentimentScore) {
   switch (score) {
     case 1: return 'text-green-500'
     case -1: return 'text-red-500'
-    default: return 'text-gray-500'
+    default: return 'text-white'
   }
 }
 
@@ -36,7 +36,7 @@ function getSentimentLabel(score: TSentimentScore) {
       class="text-base"
       :class="[getSentimentIcon(sentiment)]"
     />
-    <span class="text-sm">
+    <span class="text-sm text-white">
       {{ getSentimentLabel(sentiment) }}
     </span>
   </div>

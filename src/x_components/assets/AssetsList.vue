@@ -1,11 +1,11 @@
 <script setup lang="ts">
-import type { IPortfolioAsset, TSentimentScore } from '@types'
+import type { TPortfolioAsset, TSentimentScore } from '@types'
 import { Icon } from '@iconify/vue'
 import { ref } from 'vue'
 import { useModalStore } from '~/stores/modal'
 
 defineProps<{
-  assets: IPortfolioAsset[]
+  assets: TPortfolioAsset[]
 }>()
 
 const modalStore = useModalStore()
@@ -32,7 +32,7 @@ function formatCompactNumber(value: number) {
   return value.toFixed(0)
 }
 
-function calculateAssetValue(asset: IPortfolioAsset) {
+function calculateAssetValue(asset: TPortfolioAsset) {
   const price = Number.parseFloat(asset.asset.latest_value)
   return price * asset.units
 }
@@ -81,11 +81,11 @@ function isExpanded(assetId: string) {
   return expandedAssets.value.has(assetId)
 }
 
-function handleEdit(asset: IPortfolioAsset) {
+function handleEdit(asset: TPortfolioAsset) {
   modalStore.openAssetForm(asset.id)
 }
 
-function handleDelete(asset: IPortfolioAsset) {
+function handleDelete(asset: TPortfolioAsset) {
   console.log('Delete asset:', asset)
 }
 </script>

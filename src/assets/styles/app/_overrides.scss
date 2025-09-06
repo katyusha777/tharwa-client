@@ -17,3 +17,11 @@
 .p-select-overlay {
     z-index: 10001 !important;
 }
+
+.p-chip {
+
+    &.commodity { background-color: var(--color-commodity); }
+    &.stock { background-color: var(--color-stock); }
+    &.real_estate { background-color: var(--color-real_estate); }
+    &.crypto { background-color: var(--color-crypto); }
+}

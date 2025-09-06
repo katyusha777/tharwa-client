@@ -1,14 +1,10 @@
 import type { ILoginDTO, IRegisterDTO } from '@types'
-import type { IBooleanResponse, TGetUserResponse } from '~/@types/api'
+import type { IBooleanResponse } from '~/@types/api'
 import Api from '@api/Api'
 
 export default abstract class AuthApi {
-  public static getAuthenticatedUser(): Promise<TGetUserResponse> {
-    return Api.get<TGetUserResponse>('/auth/user')
-  }
-
-  public static getSteamLoginUrl(referralCode: string | null = null): Promise<string> {
-    return Api.get<string>(`/auth/steam${referralCode ? `?referral_code=${referralCode}` : ''}`)
+  public static getAuthenticatedUser(): Promise<any> {
+    return Api.get<any>('/auth/user')
   }
 
   public static login(data: ILoginDTO): Promise<IBooleanResponse> {

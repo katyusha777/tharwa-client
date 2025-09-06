@@ -11,7 +11,7 @@ const slots = useSlots()
 
 <template>
   <div>
-    <div class="text-sm text-gray-300 mb-1 barlow-condensed-regular uppercase">
+    <div class="text-xs text-gray-600 mb-0.5">
       {{ title }}
     </div>
 
@@ -19,7 +19,7 @@ const slots = useSlots()
     <div v-if="slots.default">
       <slot />
     </div>
-    <div v-else-if="value" class="barlow-condensed-regular text-[18px] uppercase">
+    <div v-else-if="value" class="text-sm font-medium text-white">
       {{ value }}
     </div>
   </div>

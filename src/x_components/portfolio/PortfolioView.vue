@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { IPortfolioAsset, TSentimentScore } from '@types'
+import type { TPortfolioAsset, TSentimentScore } from '@types'
 import { Icon } from '@iconify/vue'
 import { storeToRefs } from 'pinia'
 import { computed } from 'vue'
@@ -77,7 +77,7 @@ function getSentimentLabel(score: TSentimentScore) {
   }
 }
 
-function calculateAssetValue(asset: IPortfolioAsset) {
+function calculateAssetValue(asset: TPortfolioAsset) {
   const price = Number.parseFloat(asset.asset.latest_value)
   return price * asset.units
 }

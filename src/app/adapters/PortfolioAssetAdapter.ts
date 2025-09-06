@@ -1,18 +1,19 @@
-import type { IAssetFormDTO, IPortfolioAsset } from '~/@types/portfolio'
+import type { TAssetFormDTO } from '~/@types/assets'
+import type { TPortfolioAsset } from '~/@types/portfolio'
 import PortfolioAssetApi from '@api/PortfolioAssetApi'
 
 export default abstract class PortfolioAssetAdapter {
-  public static async getAsset(id: string): Promise<IPortfolioAsset> {
+  public static async getAsset(id: string): Promise<TPortfolioAsset> {
     return PortfolioAssetApi.getAsset(id)
   }
 
-  public static async createAsset(data: IAssetFormDTO): Promise<boolean> {
+  public static async createAsset(data: TAssetFormDTO): Promise<boolean> {
     const request = await PortfolioAssetApi.createAsset(data)
     return request.success
   }
 
-  public static async updateAsset(id: string, amount: number): Promise<boolean> {
-    const request = await PortfolioAssetApi.updateAsset(id, amount)
+  public static async updateAsset(id: string, data: TAssetFormDTO): Promise<boolean> {
+    const request = await PortfolioAssetApi.updateAsset(id, data)
     return request.success
   }
 

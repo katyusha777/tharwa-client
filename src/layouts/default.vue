@@ -6,6 +6,7 @@ const { authenticatedUser } = storeToRefs(authStore)
 </script>
 
 <template>
+  <AppHeader class="mb-12" />
   <RouterView v-slot="{ Component }">
     <component :is="Component" />
   </RouterView>
